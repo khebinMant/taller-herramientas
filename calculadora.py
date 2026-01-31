@@ -17,6 +17,8 @@ def calculadora():
     print("1. Sumar")
     print("2. Restar")
     print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Salir")
     
     while True:
         opcion = input("\nSeleccione una opción (1-5): ")
@@ -39,6 +41,9 @@ def calculadora():
                 elif opcion == '3':
                     resultado = multiplicar(num1, num2)
                     print(f"Resultado: {num1} × {num2} = {resultado}")
+                elif opcion == '4':
+                    resultado = dividir(num1, num2)
+                    print(f"Resultado: {num1} ÷ {num2} = {resultado}")
             except ValueError:
                 print("Error: Ingrese números válidos")
         else:
